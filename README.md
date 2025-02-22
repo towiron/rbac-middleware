@@ -1,5 +1,5 @@
 # RBAC Middleware for Go
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://github.com/towiron/rbac-middleware)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://pkg.go.dev/github.com/towiron/rbac-middleware)
 
 [![GitHub Workflow](https://github.com/towiron/rbac-middleware/actions/workflows/go.yaml/badge.svg?branch=main)](https://github.com/towiron/rbac-middleware/actions/workflows/go.yaml)
 [![codecov](https://codecov.io/gh/towiron/rbac-middleware/graph/badge.svg?token=IING0E9DE0)](https://codecov.io/gh/towiron/rbac-middleware)
