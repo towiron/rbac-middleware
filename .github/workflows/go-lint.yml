@@ -23,7 +23,7 @@ jobs:
         run: go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.60.3
 
       - name: Run golangci-lint
-        run: golangci-lint run --timeout=5m
+        run: GOFLAGS=-mod=mod golangci-lint run --timeout=5m
 
 
 
