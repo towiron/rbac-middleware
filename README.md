@@ -1,4 +1,11 @@
 # RBAC Middleware for Go
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://github.com/towiron/rbac-middleware)
+
+[![GitHub Workflow](https://github.com/towiron/rbac-middleware/actions/workflows/go.yaml/badge.svg?branch=main)](https://github.com/towiron/rbac-middleware/actions/workflows/go.yaml)
+[![codecov](https://codecov.io/gh/towiron/rbac-middleware/graph/badge.svg?token=IING0E9DE0)](https://codecov.io/gh/towiron/rbac-middleware)
+[![Go Report Card](https://goreportcard.com/badge/github.com/towiron/rbac-middleware)](https://goreportcard.com/report/github.com/towiron/rbac-middleware)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/towiron/rbac-middleware)
+![GitHub Tag](https://img.shields.io/github/v/tag/towiron/rbac-middleware)
 
 A robust Role-Based Access Control (RBAC) middleware for Go HTTP services, leveraging Casbin for authorization and JWT for authentication.
 
@@ -164,6 +171,8 @@ The middleware returns the following HTTP status codes:
 
 
 ## TODO: License 
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Security Considerations
 
