@@ -1,4 +1,5 @@
 temp
+bin
 coverage.*
 
 # OS
