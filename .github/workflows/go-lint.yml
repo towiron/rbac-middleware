@@ -12,18 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Set up Go
-        uses: actions/setup-go@v5
+      - uses: actions/setup-go@v5
         with:
-          go-version: '1.24'
-          cache: true
-
+          go-version: stable
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v6
         with:
           version: v1.60
-          args: --timeout=5m
+
 
   test:
     name: test
@@ -47,13 +43,12 @@ jobs:
 
       - name: Run tests
         run: |
-          go test -race -coverprofile=temp/coverage.out -covermode=atomic ./...
+          go test -race -coverprofile=coverage.txt -covermode=atomic ./...
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
         with:
-          file: temp/coverage.out
-          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}
 
   build:
     name: build
